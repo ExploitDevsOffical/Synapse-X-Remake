@@ -1,5 +1,5 @@
 --Join our discord server! https://discord.gg/rjXJPXMTY2
-local synversion = "2.5 - By ExploitDevsOffical"
+local synversion = "v2.5 - By ExploitDevsOffical"
 local G2L = {};
 -- StarterGui.SynapseX XYFXYNmG4D
 G2L["1"] = Instance.new("ScreenGui", game:GetService("CoreGui"));

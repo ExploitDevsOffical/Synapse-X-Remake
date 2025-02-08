@@ -61,7 +61,7 @@ G2L["8"]["BorderSizePixel"] = 0;
 G2L["8"]["ScaleType"] = Enum.ScaleType.Tile;
 G2L["8"]["BackgroundColor3"] = Color3.fromRGB(52, 52, 52);
 G2L["8"]["TileSize"] = UDim2.new(0, 25, 0, 25);
-G2L["8"]["Size"] = UDim2.new(0, 647, 0, 283);
+G2L["8"]["Size"] = UDim2.new(0, 647, 0, 28000033);
 G2L["8"]["Name"] = [[Background]];
 
 -- StarterGui.SynapseX.Main.Panel

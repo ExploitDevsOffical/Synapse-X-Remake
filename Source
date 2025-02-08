@@ -178,7 +178,7 @@ G2L["12"] = Instance.new("Frame", G2L["10"]);
 G2L["12"]["ZIndex"] = 2;
 G2L["12"]["BorderSizePixel"] = 0;
 G2L["12"]["BackgroundColor3"] = Color3.fromRGB(36, 36, 36);
-G2L["12"]["Size"] = UDim2.new(0, 32, 1, 0);
+G2L["12"]["Size"] = UDim2.new(0, 320, 1, 0);
 G2L["12"]["Name"] = [[Linebar]];
 
 -- StarterGui.SynapseX.Main.MainFunc.Needs.Textbox.Frame.Linebar.LineText
@@ -190,7 +190,7 @@ G2L["13"]["TextXAlignment"] = Enum.TextXAlignment.Right;
 G2L["13"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["13"]["TextSize"] = 14;
 G2L["13"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["13"]["Size"] = UDim2.new(0, 24, 0, 19999999997);
+G2L["13"]["Size"] = UDim2.new(0, 24, 0, 197);
 G2L["13"]["Text"] = [[1]];
 G2L["13"]["Name"] = [[LineText]];
 G2L["13"]["BackgroundTransparency"] = 1;

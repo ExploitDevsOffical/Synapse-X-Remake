@@ -178,7 +178,7 @@ G2L["12"] = Instance.new("Frame", G2L["10"]);
 G2L["12"]["ZIndex"] = 2;
 G2L["12"]["BorderSizePixel"] = 0;
 G2L["12"]["BackgroundColor3"] = Color3.fromRGB(36, 36, 36);
-G2L["12"]["Size"] = UDim2.new(0, 320, 1, 0);
+G2L["12"]["Size"] = UDim2.new(0, 32, 1, 0);
 G2L["12"]["Name"] = [[Linebar]];
 
 -- StarterGui.SynapseX.Main.MainFunc.Needs.Textbox.Frame.Linebar.LineText

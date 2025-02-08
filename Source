@@ -94,7 +94,7 @@ G2L["c"]["TextSize"] = 14;
 G2L["c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
 G2L["c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["c"]["Visible"] = false;
-G2L["c"]["Size"] = UDim2.new(0, 56, 0, 16);
+G2L["c"]["Size"] = UDim2.new(0, 70, 0, 16);
 G2L["c"]["Name"] = [[Tab]];
 G2L["c"]["Text"] = [[  script 1 ]];
 G2L["c"]["Position"] = UDim2.new(-0.0003878306597471237, 0, -0.011710520833730698, 0);
@@ -112,7 +112,7 @@ G2L["d"]["Size"] = UDim2.new(0, 10, 0, 10);
 G2L["d"]["Name"] = [[Remove]];
 G2L["d"]["BorderColor3"] = Color3.fromRGB(28, 43, 54);
 G2L["d"]["Text"] = [[x]];
-G2L["d"]["Position"] = UDim2.new(0, 46, 0, 2);
+G2L["d"]["Position"] = UDim2.new(0, 60, 0, 2);
 G2L["d"]["BackgroundTransparency"] = 1;
 
 -- StarterGui.SynapseX.Main.MainFunc.Needs.ScriptHubButton
@@ -127,7 +127,7 @@ G2L["e"]["Visible"] = false;
 G2L["e"]["Size"] = UDim2.new(0, 96, 0, 15);
 G2L["e"]["Name"] = [[ScriptHubButton]];
 G2L["e"]["BorderColor3"] = Color3.fromRGB(61, 61, 61);
-G2L["e"]["Text"] = [[test.lua]];
+G2L["e"]["Text"] = [[test]];
 G2L["e"]["AutomaticSize"] = Enum.AutomaticSize.X;
 G2L["e"]["Position"] = UDim2.new(0.039603959769010544, 0, 0, 0);
 
@@ -3108,11 +3108,11 @@ local function C_51()
 	local script = G2L["51"];
 	script.Parent.savescript.MouseButton1Up:Connect(function()
 		local module = require(script.Parent.Parent.Module)
-		module:AddScriptTabSave(script.Parent.scriptname.Text..".lua", module:GetActiveTextbox().Frame.Textbox.Text)
+		module:AddScriptTabSave(script.Parent.scriptname.Text.."", module:GetActiveTextbox().Frame.Textbox.Text)
 		script.Parent.Visible = false
 		script.Parent.scriptname.Text = ''
-		makefolder("SynapseSavedScripts")
-		writefile("Save/"..script.Parent.scriptname.Text..".lua", module:GetActiveTextbox().Frame.Textbox.Text)
+		makefolder("Save")
+		writefile("Save"..script.Parent.scriptname.Text.."", module:GetActiveTextbox().Frame.Textbox.Text)
 	end)
 
 	script.Parent.Close.MouseButton1Up:Connect(function()
@@ -3286,7 +3286,7 @@ local function C_84()
 	local script = G2L["84"];
 	local module = require(script.Parent.Module)
     
-	for index, value in pairs(listfiles("SynapseSavedScripts")) do
+	for index, value in pairs(listfiles("Save")) do
     	print(value)
 		if isfile(value) then
 			task.wait(0.05)

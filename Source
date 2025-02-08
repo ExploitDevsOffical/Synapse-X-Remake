@@ -3112,7 +3112,7 @@ local function C_51()
 		script.Parent.Visible = false
 		script.Parent.scriptname.Text = ''
 		makefolder("SynapseSavedScripts")
-		writefile("SynapseSavedScripts/"..script.Parent.scriptname.Text..".lua", module:GetActiveTextbox().Frame.Textbox.Text)
+		writefile("Save/"..script.Parent.scriptname.Text..".lua", module:GetActiveTextbox().Frame.Textbox.Text)
 	end)
 
 	script.Parent.Close.MouseButton1Up:Connect(function()
